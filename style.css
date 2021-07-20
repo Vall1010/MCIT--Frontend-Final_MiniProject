@@ -1,0 +1,354 @@
+/* Main Style  */
+/* This is to clear all margins and paddings and to add ease effect on transition */
+* {
+  margin: 0;
+  padding: 0;
+  /* for all fading transitions for nav bar */
+  transition: 0.5s all;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vmin;
+  line-height: 2;
+}
+
+/* Navigation Styling */
+/* Navigation full width */
+.SiteNav {
+  width: 100%;
+}
+
+/* NAV Styles */
+/* a hover effect is also added to make hover transparent when navigating the website */
+/* This is added to fix the header on top */
+header {
+  position: fixed;
+  background-color: #333;
+  opacity: 0.4;
+}
+
+header:hover {
+  opacity: 1;
+}
+
+/* style  added to contol size when in mobile view */
+.logo {
+  width: 7%;
+}
+
+nav {
+  width: 92%;
+}
+
+nav a, .nav2 a {
+  padding: 0 20px;
+  color: #ddd;
+}
+
+/* change color of menu text when hovered */
+nav a:hover,
+.nav2 a:hover {
+  color: #ffdb38;
+}
+
+li {
+  list-style: none;
+  padding: 9px 0;
+  display: none;
+}
+
+.nav2 {
+  margin-top: -7%;
+  display: none;
+}
+
+.nav2:hover li {
+  display: block;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+/* Style float half divs */
+.half {
+  width: 47%;
+  padding: 0 1%;
+}
+
+.fhalf {
+  width: 47%;
+  padding: 0 1%;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3.5vw;
+  margin-bottom: -5%;
+  color: #45a049;
+}
+
+p {
+  padding: 20px 0;
+}
+
+/* this is to remove all anchor link decorations */
+a {
+  text-decoration: none;
+}
+
+/* Content Styling */
+.row {
+  width: 100%;
+  padding: 2% 0;
+}
+
+/* buttons Style */
+/* button general padding */
+.button {
+  padding: 15px 25px;
+}
+
+/* button normal and hover state */
+.button1 {
+  background-color: #ffb80a;
+  color: black;
+  border: 2px solid #000;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.button1:hover {
+  background-color: #16a085;
+  color: white;
+}
+
+.button2 {
+  background-color: #e76f51;
+  color: black;
+  border: 2px solid #000;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.button2:hover {
+  background-color: #16a085;
+  color: #fff;
+}
+
+/* size of the image of the team here  with ease transition*/
+.profile {
+  width: 400px;
+  margin-top: 100px;
+  transition: transform .2s;
+  margin-left: 70px;
+}
+
+.profile:hover {
+  transform: scale(1.2);
+}
+
+/* This is to allow margins on both sides and center the content  */
+.wrap {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* allignment section  */
+/* /This allows elements to behave like table */
+.inline {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+/* This is to allow margins on both sides and center the content  */
+/* This class is added so that  we can  assign the div to the desired position by just adding the class */
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.headtxtBlog {
+  text-align: left;
+  margin-top: 70px;
+}
+
+/* float left/right for nav elements */
+.fr {
+  text-align: right;
+}
+
+.fl {
+  text-align: left;
+}
+
+/*code for slide effects*/
+/* These are the code for the animations */
+/* These are the slide effects in web intro */
+.slide-left {
+  animation: slide-left ease 1s;
+}
+
+.slide-right {
+  animation: slide-right ease 1s;
+}
+
+.slide-down {
+  animation: slide-down ease 1s;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* Forms Styling here */
+.halfforms {
+  width: 45%;
+  padding: 0 1%;
+  font-size: 14;
+
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Footer Style here */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  height: 60px;
+}
+
+/* Media Queries for mobile adjustment */
+@media all and (max-width: 1000px) {
+  
+  .txt{
+    font-size:3vmin;
+   
+  }
+  
+  nav {
+    display: none !important;
+  }
+
+  .nav2 {
+    display: block;
+  }
+
+  .half {
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: -2%;
+    color: #45a049;
+    margin-top: 7vh;
+  }
+
+  .profile {
+    margin: 0 0 50px 0;
+    width: 50%;
+  }
+
+  /* form margins */
+  .halfforms {
+    width: 100%;
+    padding: 0 1%;
+    line-height: .9;
+    
+    
+  }
+  
+  .footer{
+    height: 55px;
+  }
+  
+ .mainbuttons{
+    margin-bottom: 20px;
+  }
+  
+
+.profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  }
+  
+  .profile:hover {
+   transform: none !important;    
+    
+}
